@@ -1,2 +1,2 @@
 # jHub_Coding
-jHub_Coding Hub-Python
+jHub_Coding_Hub_Python
