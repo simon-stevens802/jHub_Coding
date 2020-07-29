@@ -18,7 +18,7 @@ def hangman():
 #hide the chosen_word
     secret_word = re.sub('[0-9a-zA-Z]','*',chosen_word)
 
-
+    
 ###define process to handle player guesses
 # define 'guess' as the function, with 'letter', 'word' and 'encoded' as strings
     def guess(letter, word, encoded):
@@ -72,11 +72,11 @@ def hangman():
             if "*" not in secret_word:
 # no letters left to guess - player wins
                 print("Well done, the word was:", chosen_word)
-                print("Congratulations you win")
+                print("Congratulations you win!")
 
                 break
 # correct guess, more letters left to guess. Show lives left, show word left to guess.     
             else:
-                print("well done! That letter was found. You still have", lives, "remaining. The word to guess is: ", secret_word)                
+                print("Well done! That letter was found. You still have", lives, "remaining. The word to guess is: ", secret_word)                
 # begin the game
 hangman()
